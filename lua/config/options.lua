@@ -5,7 +5,6 @@ local set = vim.opt
 --set.relativenumber = true
 set.number = true
 
-
 -- indentation and tabs
 set.tabstop = 4
 set.shiftwidth = 4
@@ -37,7 +36,7 @@ vim.g.undotree_DiffCommand = "FC"
 -- Remove tilde symble
 set.fillchars = { eob = " " }
 
-vim.diagnostic.config {
-    update_in_insert = false,
-    underline = true,
-}
+vim.diagnostic.config({
+	update_in_insert = false,
+	underline = true,
+})

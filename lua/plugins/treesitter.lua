@@ -12,7 +12,8 @@ return {
 				"cpp",
 				"c",
 				"java",
-                "go"
+                "go",
+                "glsl",
 			},
 			auto_install = false,
 		})

@@ -1,4 +1,4 @@
-return{
+return {
 
     {
         "datsfilipe/vesper.nvim",
@@ -6,9 +6,8 @@ return{
         priority = 1000,
         config = function()
             vim.cmd.colorscheme("vesper")
-            vim.cmd('hi Directory guibg=NONE')
-            vim.cmd('hi SignColumn guibg=NONE')
-        end
-    }
-
+            vim.cmd("hi Directory guibg=NONE")
+            vim.cmd("hi SignColumn guibg=NONE")
+        end,
+    },
 }

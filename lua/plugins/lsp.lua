@@ -20,6 +20,8 @@ return {
                     "mesonlsp",
                     "cmake",
                     "gopls",
+                    "glsl_analyzer",
+                    "pyright",
                 },
             })
 
@@ -62,7 +64,7 @@ return {
                     "--query-driver=*",
                 },
                 init_options = {
-                    compilationDatabasePath = "build", -- if you have compile_commands.json in a build folder
+                    compilationDatabasePath = "build/debug", -- if you have compile_commands.json in a build folder
                 },
             })
 
@@ -85,6 +87,11 @@ return {
                         command = "EslintFixAll",
                     })
                 end,
+            })
+
+            -- GLSL LSP configuration
+            vim.lsp.config("glsl_analyzer", {
+                filetypes = { "glsl", "vert", "tesc", "tese", "geom", "frag", "comp" },
             })
 
             -- Keymaps for LSP
